@@ -1,7 +1,34 @@
 <!DOCTYPE html>
 <head>
-
+  <link rel="stylesheet" href="style.css">
+  <title>Todo App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
+  <h1>Todoアプリ</h1>
+  <div class="todo">
+    <div class="todo-input">
+      <label>Todo：
+        <input type="text" id="todoInput">
+      </label>
+    </div>
+    <div class="date">
+      <label>期日 ：
+        <input type="date" id="deadline">
+      </label>
+    </div>
+    <div class="btn">
+      <button id="save">save</button>
+    </div>
+    <div class="todo-list">
+      <table border="1">
+        <tr>
+          <th>Todo</th>
+          <th>期日</th>
+          <th>ステータス</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="todo.js"></script>
 </body>

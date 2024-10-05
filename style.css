@@ -1,0 +1,50 @@
+body {
+  width: 100%;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.todo {
+  width: 100%;
+  display: grid;
+  /* gridレイアウトで親要素に対して指定 */
+  justify-items: center;
+}
+
+.todo-input, .date, .btn {
+  display: flex;
+  /* 子要素を水平方向にどう配置するか */
+  justify-content: flex-start;
+  align-items: center;
+  width: 240px;
+  padding: 5px;
+}
+
+.todo-list {
+  display: grid;
+  justify-items: center;
+  padding-top: 10px;
+}
+
+table th {
+  padding: 20px;
+}
+
+td {
+  padding: 10px 20px;
+}
+
+@media (max-width: 30rem) {
+  body {
+    font-size: 14px;
+    width: 100%;
+
+  }
+
+  .todo-input, .date, .btn {
+    width: 60%;
+  }
+}
